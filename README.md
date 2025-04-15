@@ -11,7 +11,6 @@ Este proyecto procesa transacciones bancarias desde un archivo CSV y genera un r
 ## Estructura del Proyecto
 ```
     /RetoInterbank
-    ├── bin                           # Archivos compilados .class
     ├── lib                           # librerías (vacio)
     ├── resources
     │   └── data.csv                  # datos de transacciones .CSV 
