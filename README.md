@@ -33,19 +33,10 @@ Este proyecto procesa transacciones bancarias desde un archivo CSV y genera un r
 
 ### Requisitos
 
-- Java 8+ instalado en tu máquina.
-- Un archivo CSV con formato:
-`id , tipo , monto`
+- Java 8+ instalado en tu máquina: puedes instalar el jdk 8 aquí:
+[jdk-8u291-windows-x64](https://drive.google.com/drive/folders/1ONhieXDxfoG_HL8N2anc0izYhFcwRNJM?usp=sharing)
 
-ejemplo
-```
-   id,tipo,monto
-   1,Crédito,100.00
-   2,Débito,50.00
-   3,Crédito,200.00
-   4,Débito,75.00
-   5,Crédito,150.00
-```
+- (opcional) tener instalado visual studio code
 
 ## Instalación y Ejecución
 
