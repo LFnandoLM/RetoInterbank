@@ -36,6 +36,20 @@ Este proyecto procesa transacciones bancarias desde un archivo CSV y genera un r
 - Java 8+ instalado en tu máquina: puedes instalar el jdk 8 aquí:
 [jdk-8u291-windows-x64](https://drive.google.com/drive/folders/1ONhieXDxfoG_HL8N2anc0izYhFcwRNJM?usp=sharing)
 
+#### pudes agregar javac como variable de entorno de la siguiente manera:
+-copia tu ruta bin de java: 
+```
+    C:\Program Files\Java\jdk1.8.0_291
+```
+-ve a inicio -> variables de entorno -> editar variables de entorno -> variable de entorno
+-en la seccion variables de sistema busca Path -> editar -> nuevo -> pegar ruta bin
+
+#### usando solo ruta bin
+- puedes reemplazar el comando javac por simplemente la ruta bin
+```
+    C:\Program Files\Java\jdk1.8.0_291
+```
+
 - (opcional) tener instalado visual studio code
 
 ## Instalación y Ejecución
@@ -43,11 +57,6 @@ Este proyecto procesa transacciones bancarias desde un archivo CSV y genera un r
 Clona o descarga el repositorio:
 ```
     git clone https://github.com/LFnandoLM/RetoInterbank
-```
-
-navega al directorio:
-```
-    cd "RetoInterbank-main"
 ```
 
 Verifica la instalación de java:
@@ -64,6 +73,11 @@ Primero compila con el comando:
 ```
     javac -d bin src/com/bancaProceso/model/Transaccion.java src/com/bancaProceso/service/ProcesoContable.java src/com/bancaProceso/utils/LeerDataCsv.java src/App.java
 ```
+(sin variable de entorno) compilar con ruta bin
+```
+    "C:\Program Files\Java\jdk1.8.0_291" -d bin src/com/bancaProceso/model/Transaccion.java src/com/bancaProceso/service/ProcesoContable.java src/com/bancaProceso/utils/LeerDataCsv.java src/App.java
+```
+
 
 Finalmente, Ejecuta el programa:
 ```
