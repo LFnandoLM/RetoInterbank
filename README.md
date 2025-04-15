@@ -11,7 +11,7 @@ Este proyecto procesa transacciones bancarias desde un archivo CSV y genera un r
 ## Estructura del Proyecto
 ```
     /RetoInterbank
-    ├── lib                           # librerías (vacio)
+    ├── docs                           # documentación javadoc
     ├── resources
     │   └── data.csv                  # datos de transacciones .CSV 
     ├── src
@@ -24,7 +24,7 @@ Este proyecto procesa transacciones bancarias desde un archivo CSV y genera un r
     │           ├── utils
     │           │   └── LeerDataCsv.java          
     │           └── App.java                      
-    └── README.md                       # documentación
+    └── README.md                       # información del proyecto
 ```
 
 ---
