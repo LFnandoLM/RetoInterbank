@@ -51,22 +51,34 @@ ejemplo
 ## Instalación y Ejecución
 
 Clona o descarga el repositorio:
-`git clone https://github.com/tu_usuario/RetoInterbank.git`
+```
+    git clone https://github.com/LFnandoLM/RetoInterbank/tree/main
+```
 
 navega al directorio:
-`cd RetoInterbank`
+```
+    cd RetoInterbank
+```
 
 Verifica la instalación de java:
-`java -version`
+```
+    java -version
+```
 
 Accede a la carpeta RetoInterbank:
-`cd RetoInterbank`
+```
+    cd RetoInterbank
+```
 
 Primero compila con el comando:
-`javac -d bin src/com/bancaProceso/model/Transaccion.java src/com/bancaProceso/service/ProcesoContable.java src/com/bancaProceso/utils/LeerDataCsv.java src/App.java`
+```
+    javac -d bin src/com/bancaProceso/model/Transaccion.java src/com/bancaProceso/service/ProcesoContable.java src/com/bancaProceso/utils/LeerDataCsv.java src/App.java
+```
 
 Finalmente, Ejecuta el programa:
-`java -cp bin App`
+```
+    java -cp bin App
+```
 
 Salida:
 
