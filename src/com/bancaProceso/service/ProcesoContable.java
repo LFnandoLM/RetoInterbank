@@ -24,16 +24,13 @@ public class ProcesoContable {
      *   <li>Transaccien de mayor monto</li>
      *   <li>Cantidad de transacciones por tipo</li>
      * </ul>
-     *
-     * Los resultados son impresos por consola.
      * 
      * @param transacciones Lista de transacciones a procesar
      */
 
     public static void procesandoCsv(List<Transaccion> transacciones){
 
-        // definiendo valores con código unicode
-        // \u00e9 -> representa (   é  )
+        // reemplazando la letra é por su representación unicode
         final String DEDITO = "D"+"\u00e9"+"bito";
         final String CREDITO = "Cr"+"\u00e9"+"dito";
 
@@ -42,10 +39,9 @@ public class ProcesoContable {
         BigDecimal mayorMonto = new BigDecimal(0);
         BigDecimal balance = new BigDecimal(0);
 
-        // recorriendo cada transaccion
         for(Transaccion transaccion : transacciones){
             
-            // buscando transacciones de tipo "Crédito" o "Débito" mediante comparación
+            // buscando transacciones de tipo "Crédito" o "Débito"
             // suma el monto de tipo "crédito" y de encontrarse "Débito" procede a restarlo
             if(transaccion.getTipo().equalsIgnoreCase(CREDITO)){
                 balance = balance.add(transaccion.getMonto());
@@ -55,8 +51,7 @@ public class ProcesoContable {
                 cantDebitos++;
             }
 
-            // hallando el monto mas alto
-            // compareTo() --> método de Bigdecimal que retorna:
+            // buscando la transacción de mayor monto mediante compareTo();
             // 0  --> a.compareTo(b) --> retorna 0 si a es igual a b
             // -1 --> a.compareTo(b) --> retorna -1 si a es menor a b
             // 1  --> a.compareTo(b) --> retorna 1 si a es mayor a b
@@ -67,7 +62,6 @@ public class ProcesoContable {
 
         }
 
-        // imprimiendo resultados en consola
         System.out.println("Reporte de Transacciones");
         System.out.println("---------------------------------------------");
         System.out.println("Balance final: S/."+balance);

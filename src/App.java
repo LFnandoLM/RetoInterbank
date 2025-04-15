@@ -1,7 +1,7 @@
 import java.io.IOException;
 import java.util.List;
 
-// llamando a las clases de los módulos model, service y utils
+// incorporando las clases principales de cada módulo
 import com.bancaProceso.model.Transaccion;
 import com.bancaProceso.service.ProcesoContable;
 import com.bancaProceso.utils.LeerDataCsv;
@@ -19,15 +19,15 @@ import com.bancaProceso.utils.LeerDataCsv;
 public class App {
 
     /**
-     * Metodo principal (punto de entrada del programa).
+     * Punto de entrada del programa.
      * <p>
      * Este metodo intenta leer un archivo CSV con datos de transacciones
      * y luego procesarlas para generar un resumen. Si ocurre un error al leer
      * el archivo, se captura y muestra en consola.
      * </p>
      * 
-     * @param args Argumentos de linea de comandos (no se usan en este programa)
-     * @throws Exception en caso de errores generales no manejados explícitamente
+     * @param args Argumentos de linea de comandos
+     * @throws Exception Lanza una excepcion en caso de errores generales no manejados.
      */
 
     public static void main(String[] args) throws Exception {
@@ -39,7 +39,6 @@ public class App {
             ProcesoContable.procesandoCsv(transacciones);
 
         }catch(IOException e){
-            //mensaje descriptivo en caso de error de lectura
             System.out.println("error: "+e.getMessage());
         }
     }

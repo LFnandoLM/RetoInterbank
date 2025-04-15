@@ -42,12 +42,12 @@ Este proyecto procesa transacciones bancarias desde un archivo CSV y genera un r
 
 Clona o descarga el repositorio:
 ```
-    git clone https://github.com/LFnandoLM/RetoInterbank/tree/main
+    git clone https://github.com/LFnandoLM/RetoInterbank
 ```
 
 navega al directorio:
 ```
-    cd RetoInterbank
+    cd "RetoInterbank-main"
 ```
 
 Verifica la instalación de java:
@@ -70,16 +70,6 @@ Finalmente, Ejecuta el programa:
     java -cp bin App
 ```
 
-Salida:
-
-```
-Reporte de Transacciones
----------------------------------------------
-Balance final: S/.325.00
-Transacción de mayor monto: ID 3 - S/.200.00
-Conteo de transacciones: Crédito: 3 Débito: 2
-```
-
 ---
 
 ## CLASES 
@@ -99,7 +89,6 @@ Esta clase representa una transaccion bancaria.
 - **getId()**: Retorna el ID de la transacción.
 - **getTipo()**: Retorna el tipo de la transacción.
 - **getMonto()**: Retorna el monto de la transacción.
-- **toString()**: Retorna la información de la  transacción como cadena de texto.
 
 ### Clase LeerDataCsv (Utils)
 

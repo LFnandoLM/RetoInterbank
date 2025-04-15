@@ -4,12 +4,8 @@ import java.math.BigDecimal;
 
 
  /**
- * Clase que representa una transaccion bancaria.
- * contiene:
- * <p> id  IDENTIFICADOR DE OPERACION</p>
- * <p> TIPO  CREDITO O DEBITO</p>
- * <p> monto  MONTO DE LA TRANSACCION</p>
- * 
+ * Clase que representa una transaccion bancaria
+ * <p>presenta datos como identificador, tipo y monto de la operacion.</p>
  * 
  * @author Luis Loli
  * @version 1.0
@@ -21,7 +17,7 @@ public class Transaccion {
     private int id;
     private String tipo;
 
-    //MANEJO DE PRESICIONES DECIMALES DON BigDecimal
+    //manejo de presiciones decimales con BigDecimal
     private BigDecimal monto;
 
     /**
@@ -67,15 +63,4 @@ public class Transaccion {
         return monto;
     }
 
-    /**
-     * Retorna la información del objeto transaccion.
-     * se obtiene solo llamando al objeto
-     * 
-     * @return toString()
-     */
-
-    @Override
-    public String toString(){
-        return "ID - "+id+" - "+tipo+" - S/."+monto;
-    }
 }
