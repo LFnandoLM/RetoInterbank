@@ -69,6 +69,11 @@ Accede a la carpeta RetoInterbank:
     cd RetoInterbank
 ```
 
+Crea un archivo bin para los compilados del proyecto
+```
+    mkdir bin
+```
+
 Primero compila con el comando:
 ```
     javac -d bin src/com/bancaProceso/model/Transaccion.java src/com/bancaProceso/service/ProcesoContable.java src/com/bancaProceso/utils/LeerDataCsv.java src/App.java
