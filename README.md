@@ -47,7 +47,7 @@ Este proyecto procesa transacciones bancarias desde un archivo CSV y genera un r
 #### usando solo ruta bin
 - puedes reemplazar el comando javac por simplemente la ruta bin
 ```
-    C:\Program Files\Java\jdk1.8.0_291
+    C:\Program Files\Java\jdk1.8.0_291\bin\javac
 ```
 
 - (opcional) tener instalado visual studio code
@@ -74,13 +74,13 @@ Crea un archivo bin para los compilados del proyecto
     mkdir bin
 ```
 
-Primero compila con el comando:
+(opcion 1)Compila con el comando:
 ```
     javac -d bin src/com/bancaProceso/model/Transaccion.java src/com/bancaProceso/service/ProcesoContable.java src/com/bancaProceso/utils/LeerDataCsv.java src/App.java
 ```
-(sin variable de entorno) compilar con ruta bin
+(opcion 2) compilar con ruta bin
 ```
-    "C:\Program Files\Java\jdk1.8.0_291" -d bin src/com/bancaProceso/model/Transaccion.java src/com/bancaProceso/service/ProcesoContable.java src/com/bancaProceso/utils/LeerDataCsv.java src/App.java
+    "C:\Program Files\Java\jdk1.8.0_291\bin\javac" -d bin src/com/bancaProceso/model/Transaccion.java src/com/bancaProceso/service/ProcesoContable.java src/com/bancaProceso/utils/LeerDataCsv.java src/App.java
 ```
 
 
